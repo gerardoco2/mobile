@@ -1,0 +1,115 @@
+//variables
+$background: #c3c8c9;
+$white : #fff;
+$black: #202020;
+$grey: #808080;
+$orange: #FFAC40;
+//basics 
+body{
+  background:$background;
+}
+.container{
+  background-color:$white;
+  max-width:420px;
+  margin: 0 auto;
+  max-height: 600px;
+  overflow:hidden;
+  box-shadow: 0px 0px 10px $black;
+  margin-top:1em;
+  color:$black;
+}
+//icons 
+a{
+  color:$black;
+}
+.icon::after{
+  font-family:'FontAwesome';
+  font-style: normal;
+  font-size:1.5em;
+  color:$white;
+}
+.icon.burger::after{
+  content:'\f0c9';
+  float:left;
+}
+.icon.edit::after{
+  content:'\f040';
+  float:right;
+}
+.icon.search::after{
+  content:'\f002';
+}
+//header
+header{
+  background: url(https://unsplash.it/200/200?image=1042) no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height:200px;
+  margin-bottom: 40px;
+}
+.nav-bar{
+  padding: 1.5em 0.5em 0.5em;
+  color: $white;
+  text-align:center;
+}
+.name{
+  font-size:1.2em;
+}
+.profile-pic-container{
+  bottom:-40px;
+  left: calc(50% - 40px); //revisar
+  position: absolute;
+}
+.search-container{
+   background-color:#c5ce3e;
+    font-size:0.6em;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    position:absolute;
+    bottom:1em;
+  right:0;
+  
+  i::after{
+    position:absolute;
+    width:100%;
+    display:block;
+    text-align:center;
+    top:50%;
+    margin-top: -5px;
+    font-size:10px;
+  }
+}
+.profile-pic{
+  max-width:80px;
+  border-radius:50%;
+  border: 2px solid $white;
+  box-shadow: 0px 0px 15px $black;
+}
+.main{
+  
+}
+.description{
+  padding:0.5em 2em;
+  text-align:center;
+}
+.stats-container{
+ padding-bottom: 0.5em;
+  border-bottom: 1px $background solid;
+}
+.stat{
+  display:inline-block;
+  width:23%;
+  text-align:center;
+  border-right: 1px $background solid;
+  
+  &:last-child{
+    border:none;
+  }
+}
+.text{
+  color:$grey;
+  font-weight:100;
+  font-size: 0.6em;
+  text-transform:uppercase;
+}
